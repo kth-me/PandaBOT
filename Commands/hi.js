@@ -3,6 +3,7 @@ module.exports = {
     description: 'reply with hello',
     cooldown: 0,
     execute(message) {
+        console.log('hi command used!');
         message.channel.send('Hello!');
     },
 };

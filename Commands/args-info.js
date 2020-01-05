@@ -2,6 +2,7 @@ module.exports = {
     name: 'args-info',
     description: 'Information about the arguments provided.',
     execute(message, args) {
+        console.log('args-info command used!');
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         } else if (args[0] === 'foo') {
